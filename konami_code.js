@@ -12,7 +12,7 @@ function init() {
 function onKeyDownHandler(e) {
   const key = parseInt(e.detail || e.which);
 
-  if (key === alphabet[index]) {
+  if (key === code[index]) {
     index++;
 
     if (index === alphabet.length) {
@@ -24,3 +24,5 @@ function onKeyDownHandler(e) {
     index = 0;
   }
 }
+
+init();
